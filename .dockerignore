@@ -1,0 +1,12 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+*.sqlite3
+.git
+.gitignore
+django>=4.2
+boto3
+python-decouple
