@@ -16,8 +16,8 @@ COPY . .
 # Collect static files
 RUN python manage.py collectstatic --noinput
 
-# Expose port 8000 for the application
-EXPOSE 8000
+# Expose port 80 for the application
+EXPOSE 80
 
 # Run migrations and start the application
-CMD ["sh", "-c", "python manage.py migrate && gunicorn --bind 0.0.0.0:8000 cvms.wsgi:application"]
+CMD ["sh", "-c", "python manage.py migrate && gunicorn --bind 0.0.0.0:80 cvms.wsgi:application"]
