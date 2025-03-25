@@ -1,0 +1,14 @@
+{
+    "AWSEBDockerrunVersion": "1",
+    "Image": {
+      "Name": "satya368/cvms-90:latest",
+      "Update": "true"
+    },
+    "Ports": [
+      {
+        "ContainerPort": 8000,
+        "HostPort": 80
+      }
+    ],
+    "Logging": "/var/log/nginx"
+  }
